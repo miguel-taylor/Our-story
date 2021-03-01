@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.3fr 1.6fr 0.5fr 1.7fr 1.7fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.4fr 4.4fr 0.3fr 0.5fr 0.6fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    ". . . . . . . ."
+    ". title-1 title-1 title-1 . img img ."
+    ". title-2 title-2 title-2 . img img ."
+    ". . star . . img img ."
+    ". text text text . img img ."
+    ". about about about . img img ."
+    ". . . . . img img ."
+    ". . . . . . . .";
+  }
+  
+  .nav { grid-area: nav;
+  background-color: black; }
+  
+  .img { grid-area: img;
+  padding-top: 50px; }
+  
+  .title-1 { grid-area: title-1;
+  text-align: center;
+color:orange;
+padding-top: 25px ; }
+
+  .title-2 { grid-area: title-2;
+  text-align: center;}
+  
+  .star { grid-area: star; }
+  
+  .text { grid-area: text; }
+  
+  .about { grid-area: about;
+  text-align: center;
+color:orange; }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hiden;
+  }
+
+  li { float:right;}
+
+  li a { 
+    margin: 15px;
+    display:block;
+    background-color: black;
+    color: white;
+  }
